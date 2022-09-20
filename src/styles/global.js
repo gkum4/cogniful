@@ -6,12 +6,23 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    font-family: 'Rubik', sans-serif;
+  }
+
+  :root {
+    --color-primary-light: #CFE0F7;
+    --color-primary-medium: #6A93F9;
+    --color-primary-dark: #021E67;
+
+    --color-secondary-medium: #B8FA52;
+
+    --color-white: #FBFFFB;
+    --color-black: #32333B;
   }
 
   body {
     -webkit-font-smoothing: antialiased;
-    color: #272727;
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
   }
 
   button {
@@ -20,7 +31,13 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  a {
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
   main {
-    background-color: #FBFBFB;
+    background-color: var(--color-primary-medium);
   }
 `;

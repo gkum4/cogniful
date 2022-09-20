@@ -1,11 +1,14 @@
 import React from 'react';
+import Logo from './Logo';
+import Navigation from './Navigation';
 
 import { Container } from './styles';
 
 const Header = () => {
   return (
     <Container>
-      <h1>Header</h1>
+      <Logo />
+      <Navigation />
     </Container>
   );
 };
