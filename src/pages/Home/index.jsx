@@ -1,16 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Header from '../../components/Header';
-// import WhoWeAre from './WhoWeAre';
-import { Container } from './styles';
 import MainLogoButton from '../../components/MainLogoButton';
+import SmallLogoButton from '../../components/SmallLogoButton';
+import Members from './Members';
+import { Container, MainLogoButtonContainer, Content } from './styles';
+import WhoWeAre from './WhoWeAre';
+
+const membersMockData = [
+  {
+    name: 'Elisama',
+    crp: '02/142439',
+    approach: 'Terapia Cognitivo Comportamental',
+  },
+  {
+    name: 'Elisama',
+    crp: '02/142439',
+    approach: 'Terapia Cognitivo Comportamental',
+  },
+  {
+    name: 'Elisama',
+    crp: '02/142439',
+    approach: 'Terapia Cognitivo Comportamental',
+  },
+];
 
 const Home = () => {
+  const [mainLogoButtonVisible, setMainLogoButtonVisible] = useState(true);
+  const [contentUnlocked, setContentUnlocked] = useState(false);
+
   return (
     <Container>
       <Header />
 
-      <MainLogoButton onClickFinishAnimation={() => console.log('Cogniful')} />
+      <MainLogoButtonContainer shouldShrink={!mainLogoButtonVisible}>
+        <MainLogoButton
+          onClick={() => setContentUnlocked(true)}
+          onClickFinishAnimation={() => setMainLogoButtonVisible(false)}
+          unlockDelay={400000}
+        />
+      </MainLogoButtonContainer>
+
+      {!mainLogoButtonVisible && <SmallLogoButton posBottom={15} posRight={15} />}
+
+      {contentUnlocked && (
+        <Content>
+          <WhoWeAre />
+          <Members data={membersMockData} />
+        </Content>
+      )}
     </Container>
   );
 };

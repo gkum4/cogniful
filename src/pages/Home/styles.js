@@ -1,8 +1,30 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { headerHeight } from '../../components/Header';
 
 export const Container = styled.main`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+  position: relative;
+`;
+
+export const MainLogoButtonContainer = styled.div`
+  display: flex;
+  height: calc(100vh - ${headerHeight}px);
+  justify-content: center;
+  align-items: center;
+  transition: height 1s;
+
+  ${({ shouldShrink }) =>
+    shouldShrink &&
+    css`
+      height: 0;
+    `}
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 980px;
 `;

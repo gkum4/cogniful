@@ -5,17 +5,18 @@ export const Container = styled.button`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.2s, transform 2s;
-  transform: rotateY(180deg);
+  transition: transform 2s, visibility 2s;
 
-  &:hover {
-    opacity: 0.8;
+  &:disabled {
+    &:hover {
+      cursor: default;
+    }
   }
 
   ${({ visible }) =>
     !visible &&
     css`
-      transform: rotateY(360deg);
+      transform: rotateY(180deg);
 
       > img {
         opacity: 0;

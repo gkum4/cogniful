@@ -23,6 +23,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     color: var(--color-white);
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-primary-medium);
   }
 
   button {
