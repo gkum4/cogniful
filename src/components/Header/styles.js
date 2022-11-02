@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+export const headerHeight = 74;
+
 export const Container = styled.header`
   display: flex;
   width: 100%;
-  height: 74px;
+  height: ${headerHeight}px;
   align-items: flex-end;
   justify-content: center;
 `;

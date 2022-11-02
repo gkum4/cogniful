@@ -15,6 +15,4 @@ const Header = () => {
   );
 };
 
-export const headerHeight = 74;
-
 export default Header;

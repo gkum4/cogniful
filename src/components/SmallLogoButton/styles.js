@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.button`
   display: flex;
   position: fixed;
+  z-index: 0;
 
   ${({ posTop, posBottom, posLeft, posRight }) => {
     const top = posTop ? posTop : 'auto';

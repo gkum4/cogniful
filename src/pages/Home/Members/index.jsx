@@ -11,7 +11,7 @@ import {
   TitleContainer,
 } from './styles';
 
-const Members = ({ data = [] }) => {
+const Members = ({ data = [], onClickMember = () => {} }) => {
   const [membersRows, setMembersRows] = useState([]);
 
   useEffect(() => {
@@ -43,8 +43,8 @@ const Members = ({ data = [] }) => {
       <MembersContainer>
         {membersRows.map((row, index) => (
           <MembersRow key={index}>
-            <MemberCard data={row[0]} />
-            {row[1] ? <MemberCard data={row[1]} /> : <EmptyCard />}
+            <MemberCard data={row[0]} onClick={onClickMember} />
+            {row[1] ? <MemberCard data={row[1]} onClick={onClickMember} /> : <EmptyCard />}
           </MembersRow>
         ))}
       </MembersContainer>

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { headerHeight } from '../../components/Header';
+import { headerHeight } from '../../components/Header/styles';
 
 export const Container = styled.main`
   display: flex;
@@ -7,6 +7,7 @@ export const Container = styled.main`
   min-height: 100vh;
   align-items: center;
   position: relative;
+  overflow-x: hidden;
 `;
 
 export const MainLogoButtonContainer = styled.div`

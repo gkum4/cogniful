@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { headerHeight } from '../../../components/Header';
+import { headerHeight } from '../../../components/Header/styles';
 
 export const Section = styled.section`
   display: flex;

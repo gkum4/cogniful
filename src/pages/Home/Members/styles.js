@@ -49,6 +49,6 @@ export const MembersRow = styled.div`
 `;
 
 export const EmptyCard = styled.div`
-  width: 275px;
-  height: 105px;
+  width: 330px;
+  height: 140px;
 `;
