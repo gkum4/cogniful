@@ -5,6 +5,7 @@ import { Container, Logo } from './styles';
 const SmallLogoButton = ({ posTop, posBottom, posLeft, posRight, ...rest }) => {
   return (
     <Container
+      href="#header"
       posTop={posTop}
       posBottom={posBottom}
       posLeft={posLeft}

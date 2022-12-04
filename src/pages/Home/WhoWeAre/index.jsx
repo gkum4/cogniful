@@ -4,20 +4,34 @@ import { Section, TitleContainer, TextContainer, Title, Text } from './styles';
 
 const WhoWeAre = () => {
   return (
-    <Section>
+    <Section id="who_we_are">
       <TitleContainer>
         <Title>Quem somos</Title>
       </TitleContainer>
       <TextContainer>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consequatur nostrum
-          doloremque, eius illum itaque totam earum a, officiis deserunt magnam blanditiis
-          voluptatibus vitae quaerat iste incidunt voluptate impedit architecto. Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Facilis, porro rerum labore sed ipsum nulla at
-          soluta cum iure adipisci nesciunt, officia vitae laborum est autem nam amet velit
-          sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt
-          temporibus animi commodi ducimus natus vero vel ab dolore! Dignissimos eligendi natus
-          nesciunt a dolorum facilis enim debitis cupiditate aut.
+          Olá! Nós somos o grupo Cogniful, formado por psicólogos que oferecem serviços de
+          atendimento psicoterapêutico.
+          <br />
+          <br />
+          Fomos estudantes da mesma turma de psicologia da PUCPR, onde nos conhecemos e nos tornamos
+          amigos, descobrindo também interesses profissionais em comum. Iniciando a carreira de
+          psicólogos, percebemos a necessidade de compartilhar experiências e conhecimentos para um
+          maior desenvolvimento profissional. Neste primeiro momento, criamos um grupo de estudos e
+          intervisão que cumpriu com esses propósitos. Ao longo dos encontros, pudemos notar os
+          resultados positivos em nossos atendimentos individuais discutidos nesses encontros, e a
+          partir daí surgiu a ideia de criar algo em conjunto, dando um nome e forma ao projeto:
+          Cogniful!
+          <br />
+          <br />
+          Nós do grupo Cogniful trabalhamos com abordagens cognitivo-comportamentais da psicologia,
+          as quais são dinâmicas, interativas e colaborativas, de forma que terapeuta e paciente
+          trabalham em conjunto diante das questões levantadas para buscar soluções mais saudáveis e
+          correspondentes com os objetivos do paciente, além da promoção de sua saúde mental e de
+          uma vida mais valorosa.
+          <br />
+          <br />
+          Qualquer dúvida, ficamos à disposição!
         </Text>
       </TextContainer>
     </Section>

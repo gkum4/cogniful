@@ -6,7 +6,7 @@ import { Container, Content } from './styles';
 
 const Header = () => {
   return (
-    <Container>
+    <Container id="header">
       <Content>
         <Logo />
         <Navigation />

@@ -35,7 +35,7 @@ const Members = ({ data = [], onClickMember = () => {} }) => {
   }, [data]);
 
   return (
-    <Container>
+    <Container id="members">
       <TitleContainer>
         <Title>Membros</Title>
       </TitleContainer>

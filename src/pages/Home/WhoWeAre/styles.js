@@ -21,4 +21,7 @@ export const TextContainer = styled.div`
 
 export const Title = styled.h2``;
 
-export const Text = styled.div``;
+export const Text = styled.p`
+  font-size: 20px;
+  line-height: 25px;
+`;

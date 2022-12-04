@@ -6,6 +6,21 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+    scroll-behavior: smooth;
+  }
+
+  body::-webkit-scrollbar, div::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track, div::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb {
+    background-color: #00000090;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
   }
 
   :root {

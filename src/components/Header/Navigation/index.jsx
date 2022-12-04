@@ -5,15 +5,11 @@ import { Container, ItemLink, ScheduleLink } from './styles';
 const Navigation = () => {
   return (
     <Container>
-      <ItemLink href="" target="_blank">
-        Quem somos
-      </ItemLink>
+      <ItemLink href="#who_we_are">Quem somos</ItemLink>
 
-      <ItemLink href="" target="_blank">
-        Sobre o nosso trabalho
-      </ItemLink>
+      <ItemLink href="#members">Membros</ItemLink>
 
-      <ScheduleLink href="" target="_blank">
+      <ScheduleLink href="https://forms.gle/t7AJvoD7GqCaBPKP7" target="_blank">
         Agendar uma sessão
       </ScheduleLink>
     </Container>

@@ -1,5 +1,4 @@
-import React from 'react';
-import { useCallback } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import {
   Container,
   CoverContainer,
@@ -20,7 +19,7 @@ const MemberCard = ({
     name: '',
     crp: '',
     gender: '',
-    approach: '',
+    approaches: [],
     profileImage: '',
   },
   onClick = () => {},
@@ -28,6 +27,25 @@ const MemberCard = ({
   const handleClick = useCallback(() => {
     onClick(data);
   }, [data]);
+
+  const approaches = useMemo(() => {
+    return (
+      <>
+        {data.approaches.map((approach, index) => {
+          if (index === 0) {
+            return approach;
+          }
+
+          return (
+            <>
+              <br />
+              {approach}
+            </>
+          );
+        })}
+      </>
+    );
+  }, []);
 
   return (
     <Container onClick={handleClick}>
@@ -50,7 +68,7 @@ const MemberCard = ({
           <InformationText>
             Psicólog{data.gender === 'male' ? 'o' : 'a'} - CRP {data.crp}
           </InformationText>
-          <InformationText>{data.approach}</InformationText>
+          <InformationText>{approaches}</InformationText>
         </PsychologistInformationContainer>
       </InformationContainer>
     </Container>

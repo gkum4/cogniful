@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.button`
   display: flex;
-  width: 330px;
-  height: 140px;
+  width: 430px;
+  height: 220px;
   flex-direction: row;
   position: relative;
   color: var(--color-white);
@@ -14,7 +14,7 @@ export const CoverContainer = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background-color: #00000081;
+  background-color: #00000090;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ export const CoverContainer = styled.div`
 `;
 
 export const CoverText = styled.strong`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 `;
 
@@ -40,9 +40,9 @@ export const ImageContainer = styled.div`
 
 export const MemberImage = styled.img`
   object-fit: cover;
-  width: 106px;
-  height: 106px;
-  border-radius: 53px;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
 `;
 
 export const InformationContainer = styled.div`
@@ -56,13 +56,13 @@ export const NameContainer = styled.div`
   display: flex;
   height: 50%;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: end;
   padding-bottom: 7px;
 `;
 
 export const NameText = styled.strong`
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 600;
 `;
 
@@ -83,7 +83,7 @@ export const PsychologistInformationContainer = styled.div`
 `;
 
 export const InformationText = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   text-align: start;
 `;
